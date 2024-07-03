@@ -212,6 +212,23 @@ Watch our demo video to see the Diegetic Gaze Control system in action and under
 
 [![Watch the video](https://img.shields.io/badge/youtube-d95652.svg?style=flat-square&logo=youtube)](https://www.youtube.com/watch?v=hrXuNYLDFds&feature=youtu.be)
 
+## Citing this work
+
+If you use this repository in your research, please cite the following:
+
+```
+@software{NunezSardinha2024_DGUI,
+author = {Emanuel, Nunez Sardinha and Marcela, Munera and Nancy, Zook and David, Western and Virginia, Ruiz Garate},
+doi = {pending},
+month = june,
+title = {{Diegetic Graphical User Interfaces \& Intuitive
+Control of Assistive Robots via Eye-gaze}},
+url = {https://github.com/enunezs/DiegeticGazeControl},
+version = {1.0},
+year = {2024}
+}
+```
+
 
 
 
