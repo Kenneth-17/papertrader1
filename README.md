@@ -69,9 +69,6 @@ Diegetic Gaze Control keeps the user's gaze focused on the task at hand. Unlike 
 ### Safety and Comfort
 By keeping the user’s gaze on the robot or task, Diegetic Gaze Control enhances safety and usability. This is particularly beneficial in environments where situational awareness is crucial. Additionally, the system avoids the discomfort and potential VR sickness associated with wearing large VR headsets.
 
-### Cost-Effective and Accessible
-Printed paper interfaces are not only inexpensive to produce but also simple to replace and customize. This makes the technology accessible to a broader audience, including those in resource-limited settings.
-
 ### Open and Extensible
 Built on robust and widely-used technologies like ROS2, Docker, and OpenCV, Diegetic Gaze Control is designed to be easily extensible. Researchers and developers can build upon this platform to create new applications and functionalities, fostering innovation in the field of assistive technology.
 
