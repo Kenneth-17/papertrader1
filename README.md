@@ -4,4 +4,4 @@ Diegetic Gaze Control is an innovative system designed to enable intuitive inter
 
 At the core of Diegetic Gaze Control is the use of gaze-tracking glasses such as Pupil Neon Glasses or Tobii Glasses Pro 2. These glasses capture the user’s eye movements and translate them into control signals for interacting with printed interfaces or everyday objects. The system utilizes ArUco markers for precise detection and interaction, ensuring that users can effortlessly engage with their surroundings.
 
-This project leverages several powerful technologies, including ROS2 for robotic control, Docker for easy deployment, and OpenCV for image processing. By integrating these tools, Diegetic Gaze Control provides a robust and flexible platform for research and practical applications in assistive technology.
+This project leverages several powerful technologies, including ROS2 for robotic control, Docker for easy deployment. By integrating these tools, Diegetic Gaze Control provides a robust and flexible platform for research and practical applications in assistive technology.
