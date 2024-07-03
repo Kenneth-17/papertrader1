@@ -46,5 +46,43 @@ Diegetic Gaze Control is ideal for researchers, developers, and practitioners in
   - [Code Structure](#code-structure)
   - [Launch Files](#launch-files)
 - [Contribution Guidelines](#contribution-guidelines)
+
+# Why?
+
+<p align="center">
+Our goal is to empower people with disabilities to interact with the world without constraining them to a screen.
+</p>
+
+## Motivation
+
+The primary motivation behind Diegetic Gaze Control is to enhance the accessibility and usability of assistive technologies. Traditional control methods often rely on touchscreens, keyboards, or mouse devices, which can be cumbersome or even unusable for individuals with physical disabilities. By leveraging eye-gaze as a natural and intuitive input method, we aim to provide a more inclusive solution that enables users to interact with their environment seamlessly and independently.
+
+## Key Advantages
+
+### Intuitive and Natural Interaction
+Diegetic Gaze Control keeps the user's gaze focused on the task at hand. Unlike screen-based interfaces, where attention is divided between the screen and the environment, our system allows for direct interaction with physical objects and printed interfaces. This approach not only enhances user experience but also reduces cognitive load and improves task efficiency.
+
+### Versatility and Flexibility
+- **Hardware Compatibility**: The system supports a range of gaze-tracking devices, including Pupil Neon Glasses, Tobii Glasses Pro 2, and even standard USB webcams. This flexibility ensures that users can choose the hardware that best fits their needs and budget.
+- **Printed Interfaces**: Using printed paper interfaces provides a cost-effective and easily customizable solution. Users can create and modify their own control interfaces without the need for expensive equipment or software.
+
+### Safety and Comfort
+By keeping the user’s gaze on the robot or task, Diegetic Gaze Control enhances safety and usability. This is particularly beneficial in environments where situational awareness is crucial. Additionally, the system avoids the discomfort and potential VR sickness associated with wearing large VR headsets.
+
+### Cost-Effective and Accessible
+Printed paper interfaces are not only inexpensive to produce but also simple to replace and customize. This makes the technology accessible to a broader audience, including those in resource-limited settings.
+
+### Open and Extensible
+Built on robust and widely-used technologies like ROS2, Docker, and OpenCV, Diegetic Gaze Control is designed to be easily extensible. Researchers and developers can build upon this platform to create new applications and functionalities, fostering innovation in the field of assistive technology.
+
+## Real-World Applications
+
+Diegetic Gaze Control has numerous potential applications:
+- **Assistive Devices**: Empower individuals with disabilities to control various assistive devices, enhancing their independence and quality of life.
+- **Human-Robot Interaction**: Facilitate more natural and efficient interactions between humans and robots in both industrial and domestic settings.
+- **Education and Training**: Provide accessible learning tools and interfaces for students and trainees with physical limitations.
+
+In summary, Diegetic Gaze Control represents a significant step forward in making assistive technology more intuitive, versatile, and accessible. By leveraging eye-gaze as a primary input method, we aim to bridge the gap between users and their environments, empowering them to interact more freely and effectively.
+
 - [FAQs/Troubleshooting](#faqs--troubleshooting)
 - [Citing This Work](#citing-this-work)
