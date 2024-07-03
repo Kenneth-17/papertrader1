@@ -154,6 +154,64 @@ You can visualize the scene and gaze data by running:
 ```bash
 ./docker/2_rviz.sh
 ```
+## How it Works
+
+The Diegetic Gaze Control system allows you to interact with your environment using just your eye-gaze. Here's a closer look at how everything fits together:
+
+### System Overview
+
+The system is composed of three main components, each playing a crucial role in enabling eye-gaze interactions:
+
+1. **Input from Gaze-Tracking Glasses:**
+   - **Capture Data:** The system uses Pupil Neon Glasses or Tobii Glasses Pro 2 to capture scene images and gaze points.
+   - **Process Data:** This data is processed by the [`pupil_neon_pkg`](https://github.com/enunezs/pupil_neon_pkg) or [`ros2_tobii_glasses2`](https://github.com/enunezs/ros2_tobii_glasses2) package.
+   - **Output:** The result is two messages: gaze data (coordinates) and the scene image.
+
+2. **Detection of Diegetic Buttons:**
+   - **Detect ArUco Markers:** The [`fiducials`](/src/fiducials/) package detects ArUco markers in the scene.
+   - **Locate Buttons:** The [`diegetic_button_pkg`](/src/diegetic_button_pkg/) package determines button positions relative to the detected markers.
+
+3. **Gaze Interaction Pipeline:**
+   - **Process Gaze Data:** The [`gaze_input`](/src/diegetic_button_pkg/) node analyzes if the user is looking at a button.
+   - **Activate Button:** When a gaze is detected on a button, it activates, sending a `/joy` message.
+
+### Interactive Workflow
+
+1. **Initialization:**
+   - **Start the System:** Begin by initializing the system to capture data from your gaze-tracking glasses or webcam.
+
+2. **Data Processing:**
+   - **Real-Time Analysis:** The system processes the scene image and gaze data to detect ArUco markers and determine button positions.
+   - **Visual Feedback:** You can visualize the scene and gaze data, providing real-time feedback on what the system sees.
+
+3. **Gaze Detection and Interaction:**
+   - **Continuous Monitoring:** The system continuously checks if you're looking at a button.
+   - **Immediate Response:** When your gaze is detected on a button, it instantly activates, triggering a corresponding action via a `/joy` message.
+
+### Robot Control
+
+Once a button is activated, the system sends a `/joy` message to control the robot. The specific robot control is managed by:
+- [`ros2_franka`](https://github.com/enunezs/ros2_franka_docker)
+- [`ros2_jaco_controller`](https://github.com/enunezs/ros2_jaco_controller)
+
+### Launch Files
+
+Get started quickly with these launch files:
+
+- **`eyes_to_joy.launch.py`:** Launches nodes for gaze input to joystick output.
+- **`webcam_to_joy.launch.py`:** Starts the emulated mode using a webcam.
+
+![System Overview](doc/images/ImageProcessingDiagramAlt(1).png)
+![Node Architecture](doc/images/Nodes2.png)
+
+---
+
+### See it in Action!
+
+Watch our demo video to see the Diegetic Gaze Control system in action and understand how it can empower users through intuitive eye-gaze interactions.
+
+[![Watch the video](https://img.shields.io/badge/youtube-d95652.svg?style=flat-square&logo=youtube)](https://www.youtube.com/watch?v=hrXuNYLDFds&feature=youtu.be)
+
 
 
 
