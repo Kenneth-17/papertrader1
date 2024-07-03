@@ -79,7 +79,49 @@ Diegetic Gaze Control has numerous potential applications:
 - **Human-Robot Interaction**: Facilitate more natural and efficient interactions between humans and robots in both industrial and domestic settings.
 - **Education and Training**: Provide accessible learning tools and interfaces for students and trainees with physical limitations.
 
-In summary, Diegetic Gaze Control represents a significant step forward in making assistive technology more intuitive, versatile, and accessible. By leveraging eye-gaze as a primary input method, we aim to bridge the gap between users and their environments, empowering them to interact more freely and effectively.
+# Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+## Hardware Requirements
+
+- **Gaze-Tracking Glasses**: Pupil Neon Glasses or Tobii Glasses Pro 2 for accurate eye-tracking. Alternatively, a standard USB webcam can be used for emulated mode.
+- **Computer**: A machine capable of running Docker. Ideally, it should have a modern CPU and at least 8GB of RAM to handle the image processing and Docker containers efficiently.
+- **Printer**: For printing the sample control interfaces with ArUco markers. This can be a standard inkjet or laser printer.
+
+## Software Requirements
+
+- **Operating System**: Any OS that supports Docker. While Linux (especially Ubuntu 20.04 LTS or later) is recommended for ROS2 compatibility, Docker abstracts most OS-specific dependencies.
+- **Docker**: Docker is used to containerize the application for easier deployment. [Install Docker here](https://docs.docker.com/get-docker/)
+
+## Additional Dependencies
+
+- **Python**: Python 3.8 or later. Ensure you have `pip` for managing Python packages (if running locally outside Docker).
+- **OpenCV**: Required for image processing. Install it using `pip install opencv-python` (if running locally outside Docker).
+- **ArUco**: For detecting ArUco markers. This is typically included with OpenCV, but ensure it is installed and available (if running locally outside Docker).
+- **Pupil Labs Software**: If using Pupil Neon Glasses, ensure you have the necessary software and drivers installed. [Pupil Labs Documentation](https://docs.pupil-labs.com/)
+- **Tobii Pro SDK**: If using Tobii Glasses Pro 2, ensure the Tobii Pro SDK is installed. [Tobii Pro SDK Documentation](https://developer.tobii.com/tobii-pro-sdk/)
+
+## Printing the Sample Control Interface
+
+- Download the sample control interface from the [printables directory](src/diegetic_button_pkg/printables/).
+- Print the interface on standard A4 or Letter-sized paper.
+
+## Network Requirements
+
+- Ensure that the gaze-tracking glasses are on the same network as your computer if using wireless communication.
+- If using Docker, ensure your firewall and security settings allow Docker to communicate with the necessary devices and networks.
+
+## Environment Setup
+
+### Cloning the Repository
+
+Navigate to a new workspace and clone the repository with submodules:
+
+```bash
+git clone --recurse-submodules https://github.com/enunezs/DiegeticGazeControl
+cd DiegeticGazeControl
+
 
 - [FAQs/Troubleshooting](#faqs--troubleshooting)
 - [Citing This Work](#citing-this-work)
