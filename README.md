@@ -29,3 +29,22 @@ This project leverages several powerful technologies, including ROS2 for robotic
 - **Robust Technology Stack**: Built on ROS2, Docker, and OpenCV for reliability and ease of deployment.
 
 Diegetic Gaze Control is ideal for researchers, developers, and practitioners in the fields of assistive technology, human-computer interaction, and robotics. It provides a foundation for developing new applications that leverage eye-gaze for control and interaction, opening up new possibilities for empowering users and enhancing accessibility.
+
+# Table of Contents
+
+- [Introduction](#introduction)
+- [Why?](#why)
+- [Prerequisites](#prerequisites)
+- [Installation](#installation)
+  - [Cloning](#cloning)
+  - [Setting Up the Environment](#setting-up-the-environment)
+- [Running](#running)
+  - [Docker Setup](#docker-setup)
+  - [Configuration](#configuration)
+  - [Starting the Application](#starting-the-application)
+- [How Does It Work?](#how-does-it-work)
+  - [Code Structure](#code-structure)
+  - [Launch Files](#launch-files)
+- [Contribution Guidelines](#contribution-guidelines)
+- [FAQs/Troubleshooting](#faqs--troubleshooting)
+- [Citing This Work](#citing-this-work)
