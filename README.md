@@ -123,5 +123,4 @@ git clone --recurse-submodules https://github.com/enunezs/DiegeticGazeControl
 cd DiegeticGazeControl
 
 
-- [FAQs/Troubleshooting](#faqs--troubleshooting)
-- [Citing This Work](#citing-this-work)
+
