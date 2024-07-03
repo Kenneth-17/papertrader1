@@ -121,6 +121,23 @@ Navigate to a new workspace and clone the repository with submodules:
 ```bash
 git clone --recurse-submodules https://github.com/enunezs/DiegeticGazeControl
 cd DiegeticGazeControl
+```
+
+## Setting Up Docker Environment
+
+From the root of the repository, run the Docker setup script:
+
+```bash
+./docker/1_dockerscript.sh
+```
+
+## Configuring the System
+
+To connect to the glasses and start the gaze input to joystick output, modify the config.yaml file in the pupil_neon_pkg package to match your glasses' IP address:
+
+```bash
+nano src/pupil_neon_pkg/config/config.yaml
+```
 
 
 
