@@ -138,6 +138,22 @@ To connect to the glasses and start the gaze input to joystick output, modify th
 ```bash
 nano src/pupil_neon_pkg/config/config.yaml
 ```
+## Starting the Application
+
+To start the application using Docker, run:
+
+```bash
+ros2 launch diegetic_button_pkg eyes_to_joy.launch.py
+```
+Alternatively, to start the emulated mode using a webcam instead of the glasses, run:
+
+```bash
+ros2 launch diegetic_button_pkg webcam_to_joy.launch.py
+```
+You can visualize the scene and gaze data by running:
+```bash
+./docker/2_rviz.sh
+```
 
 
 
